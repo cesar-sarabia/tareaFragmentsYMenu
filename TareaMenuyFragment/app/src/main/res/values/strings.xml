@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="contacto">Contacto</string>
+    <string name="action_about">Acerca de</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvsNombre">Nombre</string>
+    <string name="tvsEmail">email</string>
+    <string name="tvsDescripcion">mensaje</string>
+    <string name="btnsSiguiente">enviar correo</string>
+    <string name="aboutText">cesar sarabia, developer, tester</string>
+</resources>

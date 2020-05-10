@@ -1,0 +1,83 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvMascota"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/imvPet"
+                android:src="@drawable/pet_dra"
+                android:background="@color/cardview_dark_background"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvVote"
+
+                    android:background="@mipmap/iconsdogbone"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+
+                    android:padding="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvNamePet"
+                    android:layout_toStartOf="@+id/tvTotalFavs"
+                    android:layout_toEndOf="@+id/tvVote"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvTotalFavs"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/tvfavs"
+                    android:gravity="center"
+
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvfavs"
+
+                    android:background="@mipmap/iconsdogbone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:foregroundGravity="center"
+                    android:padding="15dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
